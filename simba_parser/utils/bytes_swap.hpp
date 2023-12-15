@@ -1,5 +1,5 @@
-#ifndef UTILS_BYTES_SWAP_UTILS_HPP
-#define UTILS_BYTES_SWAP_UTILS_HPP
+#ifndef SIMBA_UTILS_BYTES_SWAP_UTILS_HPP
+#define SIMBA_UTILS_BYTES_SWAP_UTILS_HPP
 
 #ifdef __WIN32
 #include <winsock2.h>
@@ -13,4 +13,4 @@
 #define bswap64(value) bswap_64(value)
 #endif
 
-#endif // UTILS_BYTES_SWAP_UTILS_HPP
+#endif // SIMBA_UTILS_BYTES_SWAP_UTILS_HPP

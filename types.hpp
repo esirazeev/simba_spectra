@@ -28,7 +28,7 @@ struct Messageflags
 };
 
 #pragma pack(push, 1)
-struct MarketDataPacketHeader
+struct MarketDataPacketHeader // 16 bytes
 {
 	uint32_t msg_seq_num;
 	uint16_t msg_size;
@@ -36,7 +36,7 @@ struct MarketDataPacketHeader
 	uint64_t msg_time;
 };
 
-struct SBEHeader
+struct SBEHeader // 8 bytes
 {
 	uint16_t block_length;
 	uint16_t template_id;
@@ -44,19 +44,19 @@ struct SBEHeader
 	uint16_t version;
 };
 
-struct IncrementalPacketHeader
+struct IncrementalPacketHeader // 12 bytes
 {
 	uint64_t transact_time;
 	uint32_t exchange_trading_session_id;
 };
 
-struct RepeatingGroupDimensions
+struct RepeatingGroupDimensions // 3 bytes
 {
 	uint16_t block_length;
 	uint8_t num_in_group;
 };
 
-struct OrderBookSnapshot_ID_17
+struct OrderBookSnapshot_ID_17 //16 bytes
 {
 	uint32_t security_id;
 	uint32_t last_msg_seq_num_processed;
